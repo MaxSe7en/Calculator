@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: #a2c7c57a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+.calcula{
+    box-shadow: 1px 1px 20px 1px #808080b7;
+}
+#txt-area {
+    /* border: solid; */
+    width: 250px;
+    height: 100px;
+    outline: none;
+    border: none;
+    text-align: end;
+    direction: ltr;
+    padding: 40px 5px 0px 0px;
+    /* text-align-last: left; */
+    font-size: x-large;
+}
+.numbers {
+    /* border: solid; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 1px;
+    column-gap: 1px;
+    width: 250px;
+    height: 300px;
+}
+
+.numbers div {
+    /* border: solid; */
+    background-color: #92929270;
+    height: 60px;
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+}
+
+div .equal {
+    grid-row: 4/6;
+    grid-column: 4/5;
+    height: 120px;
+    border: none;
+    text-align: ceter;
+    padding-top: 45px;
+    background-color: rgba(252, 0, 13, 0.712);
+}
+
+div .zero {
+    grid-column: 2/4;
+}
+div .dot {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+div .CE,div .bck,div .add,div .div, div .mult, div .subs {
+    background-color: lightcyan;
+}
+
+div .one, div .two, div .three, div .four, div .five, div .six, div .seven, div .eight, div .nine, div .zero, div .dot{
+    background-color: #ffffff;
+}
+
+.numbers div:active{
+    background-color: hotpink;
+}
+
+button {
+    width: 70px;
+}
